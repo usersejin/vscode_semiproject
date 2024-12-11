@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배송/결제</title>
+    <link rel="stylesheet" href="/css/buy/buy.css" />
+  </head>
+  <body>
+    <div class="header">
+      <!-- 헤더 TOP -->
+      <div class="header-top">
+        <ul class="header-menu">
+          <li><a href="/notice">고객센터</a></li>
+          <li><a href="/mypage">마이페이지</a></li>
+          <li><a href="/saved">관심</a></li>
+          <li><a href="/login">로그인</a></li>
+        </ul>
+      </div>
+
+      <!-- 헤더 MAIN -->
+      <div class="header-main">
+        <a href="/" class="logo">
+          <img src="../img/jellyLogo.png" alt="jellyLogo" />
+        </a>
+        <form class="form">
+          <button>
+            <svg
+              width="17"
+              height="16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-labelledby="search"
+            >
+              <path
+                d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                stroke="currentColor"
+                stroke-width="1.333"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <input
+            class="input"
+            placeholder="검색어를 입력해주세요"
+            required=""
+            type="text"
+          />
+          <button class="reset" type="reset">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <!-- 배송 정보 container -->
+      <div class="delivery-container">
+        <div class="delivery-content">
+          <span class="left-title">배송주소</span>
+          <div class="right">
+            <input type="button" value="주소 변경" />
+          </div>
+          <div class="block"></div>
+          <p>
+            <span class="label-title">받는 분</span>
+            <span class="label">천세진</span>
+          </p>
+          <p>
+            <span class="label-title">연락처</span>
+            <span class="label">010-9289-7875</span>
+          </p>
+          <p>
+            <span class="label-title">주소</span>
+            <span class="label">서울 종로구 율곡로10길 105 디아망 4층</span>
+          </p>
+          <div class="selection">
+            <select name="요청사항" id="">
+              요청사항
+              <option value="op1">요청사항 없음</option>
+              <option value="op2">문 앞에 놓아주세요</option>
+              <option value="op3">경비실에 맡겨 주세요</option>
+              <option value="op4">
+                파손 위험 상품입니다. 배송 시 주의해주세요
+              </option>
+              <option value="">직접 입력</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- 주문 상품 container -->
+      <div class="order-container">
+        <div class="order-content">
+          <span class="left-title">주문 상품</span>
+          <div class="right">
+            <span style="margin-left: 45px; font-weight: bold">총 1건</span>
+          </div>
+          <div class="block"></div>
+          <div class="product-list">
+            <div class="product">
+              <img src="../img/productimg.png" alt="된포" />
+              <div class="product-details">
+                <span>Nike Air Force 1 '07 WB Flax</span>
+                <br />
+                <span style="color: gray; font-size: 13px"
+                  >나이키 에어포스 1 '07 WB 플랙스</span
+                >
+                <br />
+                <span>240</span>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="payment-amount">
+            <span style="display: inline-block; padding-top: 8px"
+              >결제금액</span
+            >
+            <span
+              style="
+                float: right;
+                font-weight: bold;
+                display: inline-block;
+                padding: 8px;
+              "
+              >134,000원</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 결제방법 container -->
+      <div class="payment-container">
+        <div class="payment-content">
+          <span class="left-title">결제방법</span>
+          <div class="block"></div>
+          <div class="payment-method">
+            <span>계좌 간편결제</span>
+            <p><input type="button" value="계좌를 등록하세요" /></p>
+          </div>
+        </div>
+        <div class="payment">
+          <span>일반결제</span>
+          <br />
+          <input type="button" value="신용카드" />
+          <input
+            type="button"
+            value="npay"
+            style="color: rgba(0, 199, 60, 1)"
+          />
+          <input type="button" value="kakaopay" />
+        </div>
+        <span
+          style="
+            display: inline-block;
+            padding: 30px;
+            padding-top: 10px;
+            font-size: 12px;
+            color: lightgray;
+          "
+          >체결 후 결제 정보 변경은 불가하며 분할 납부 변경은 카드사 문의
+          바랍니다. 단, 카드사별 정책에 따라 분할 납부 변경 시 수수료가 발생할
+          수 있습니다.</span
+        >
+      </div>
+
+      <!-- 최종 주문정보 container -->
+      <div class="orderSummary-container">
+        <div class="orderSummary-content">
+          <span class="left-title">최종 주문정보</span>
+          <div class="block"></div>
+          <p>
+            <span class="label-title" style="color: black">구매가</span>
+            <span class="order-label">129,000원</span>
+          </p>
+          <p>
+            <span class="label-title">배송비</span>
+            <span class="order-label">5000원</span>
+          </p>
+          <p>
+            <span class="label-title">쿠폰 사용</span>
+            <span class="order-label">-</span>
+          </p>
+        </div>
+        <div class="final-checkout">
+          <span class="left-title">총 결제금액</span>
+          <br />
+          <span
+            style="
+              display: inline-block;
+              float: right;
+              font-size: 20px;
+              font-weight: bold;
+            "
+            >134,000원</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <input type="submit" value="134,000원 결제하기" />
+    </div>
+  </body>
+</html>
