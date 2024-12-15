@@ -4,26 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>배송/결제</title>
-    <link rel="stylesheet" href="/css/buy/buy.css" />
+    <link rel="stylesheet" href="../css/subHeader.css" />
+    <link rel="stylesheet" href="../css/buy.css" />
   </head>
   <body>
-    <div class="header">
+    <!-- 서브헤더 시작 -->
+    <div class="header-section">
       <!-- 헤더 TOP -->
-      <div class="header-top">
-        <ul class="header-menu">
-          <li><a href="/notice">고객센터</a></li>
-          <li><a href="/mypage">마이페이지</a></li>
-          <li><a href="/saved">관심</a></li>
-          <li><a href="/login">로그인</a></li>
+      <div class="header-section-top">
+        <ul class="header-section-menu">
+          <li>
+            <a href="*">고객센터</a>
+          </li>
+          <li>
+            <a href="">마이페이지</a>
+          </li>
+          <li>
+            <a href="*">관심</a>
+          </li>
+          <li>
+            <!-- <a href="*">로그아웃</a> -->
+            <a href="*">로그인</a>
+          </li>
         </ul>
       </div>
 
       <!-- 헤더 MAIN -->
-      <div class="header-main">
-        <a href="/" class="logo">
+      <div class="header-section-main">
+        <a href="*" class="header-section-logo">
           <img src="../img/jellyLogo.png" alt="jellyLogo" />
         </a>
-        <form class="form">
+        <!-- 헤더 검색창 -->
+        <form class="header-form" action="*" method="get">
           <button>
             <svg
               width="17"
@@ -43,12 +55,13 @@
             </svg>
           </button>
           <input
-            class="input"
+            class="header-input"
             placeholder="검색어를 입력해주세요"
+            name="query"
             required=""
             type="text"
           />
-          <button class="reset" type="reset">
+          <button class="header-reset" type="reset">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -68,6 +81,7 @@
       </div>
     </div>
 
+    <!-- 구매페이지 시작 -->
     <div class="content-wrapper">
       <!-- 배송 정보 container -->
       <div class="delivery-container">

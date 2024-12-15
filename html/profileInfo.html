@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로필 관리</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/subHeader.css" />
+    <link rel="stylesheet" href="../css/mypageCommon.css" />
+    <link rel="stylesheet" href="../css/profileCommon.css" />
+    <link rel="stylesheet" href="../css/loginInfo.css" />
+    <link rel="stylesheet" href="../css/profileInfo.css" />
+  </head>
+  <body>
+    <!-- 관심 페이지 공통부분 시작 -->
+    <!-- 서브헤더 시작 -->
+    <div class="header-section">
+      <!-- 헤더 TOP -->
+      <div class="header-section-top">
+        <ul class="header-section-menu">
+          <li>
+            <a href="*">고객센터</a>
+          </li>
+          <li>
+            <a href="">마이페이지</a>
+          </li>
+          <li>
+            <a href="*">관심</a>
+          </li>
+          <li>
+            <!-- <a href="*">로그아웃</a> -->
+            <a href="*">로그인</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 헤더 MAIN -->
+      <div class="header-section-main">
+        <a href="*" class="header-section-logo">
+          <img src="../img/jellyLogo.png" alt="jellyLogo" />
+        </a>
+        <form class="header-form" action="*" method="get">
+          <button>
+            <svg
+              width="17"
+              height="16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-labelledby="search"
+            >
+              <path
+                d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                stroke="currentColor"
+                stroke-width="1.333"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <input
+            class="header-input"
+            placeholder="검색어를 입력해주세요"
+            name="query"
+            required=""
+            type="text"
+          />
+          <button class="header-reset" type="reset">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- 마이페이지 공통부분 시작 -->
+    <div class="mypage-container">
+      <!-- 마이페이지 네비바 시작 -->
+      <div class="mypage-snb">
+        <p class="mypage-sbn-title">마이페이지</p>
+        <p class="mypage-sbn-subtitle">쇼핑정보</p>
+        <!-- 우선 a태그로 줌 -->
+        <p class="mypage-sbn-menu">
+          <a href="*">구매내역</a>
+        </p>
+        <p class="mypage-sbn-menu">
+          <a href="*">판매내역</a>
+        </p>
+        <p class="mypage-sbn-menu">
+          <a href="*">관심</a>
+        </p>
+        <p class="mypage-sbn-subtitle">내 정보</p>
+        <p class="mypage-sbn-menu">
+          <a href="*">로그인 관리</a>
+        </p>
+        <p class="mypage-sbn-menu">
+          <a href="*">프로필 관리</a>
+        </p>
+        <p class="mypage-sbn-menu">
+          <a href="*">주소록</a>
+        </p>
+        <p class="mypage-sbn-menu">
+          <a href="*">결제 정보</a>
+        </p>
+        <p class="mypage-sbn-menu">
+          <a href="*">판매 정산 계좌</a>
+        </p>
+        <p class="mypage-sbn-menu"><a href="*" class="mypage-sbn-a">쿠폰</a></p>
+        <!-- 마이페이지 네비바 끝 -->
+      </div>
+      <!-- 마이페이지 컨텐츠 시작 -->
+      <div class="mypage-content">
+        <div class="mypageSubtitle">프로필 관리</div>
+        <div class="profile-box">
+          <div>
+            <img
+              src="https://toppng.com/uploads/preview/emoji-iphone-nerd-115497289397n7uzmyvxq.png"
+              alt="프로필 사진"
+              class="profile-image"
+            />
+          </div>
+          <div class="profile-info">
+            <span class="profile-user-nickname">ritto</span>
+            <br />
+            <span class="profile-user-email">ritto7875@gmail.com</span>
+          </div>
+          <div class="profile-btns">
+            <input type="button" value="이미지 변경" class="profile-info-btn" />
+            <input type="button" value="삭제" class="profile-info-btn" />
+          </div>
+        </div>
+        <div class="loginInfo-content">
+          <h3>프로필 정보</h3>
+          <div class="unit">
+            <span class="unit-title">프로필 이름</span>
+
+            <div class="inputBox">
+              <span class="detailInfo">사용자 프로필명</span>
+              <button class="modifybtn">변경</button>
+            </div>
+          </div>
+          <div class="unit">
+            <span class="unit-title">이름</span>
+            <div class="inputBox">
+              <span class="detailInfo">사용자 이름?</span>
+              <button class="modifybtn">변경</button>
+            </div>
+          </div>
+          <div class="unit">
+            <span class="unit-title">소개</span>
+            <div class="inputBox">
+              <span class="detailInfo">프로필 소개</span>
+              <button class="modifybtn">변경</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
